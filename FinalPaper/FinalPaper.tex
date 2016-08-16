@@ -29,8 +29,8 @@
  	of smartphones sold
  	globally increased by a factor of more than 
  	10.\footnote{\url{http://www.statista.com/statistics/263437/global-
- 	smartphone-sales-to-end-users-since-2007/}}  But a person can only use so 
- 	many smartphones at once and, thus, for the first time in years, sales 
+ 	smartphone-sales-to-end-users-since-2007/}}  A person can only use so 
+ 	many smartphones at once though and, for the first time in years, sales 
  	growth is expected to fall below double 
  	digits.\footnote{\url{https://www.idc.com/getdoc.jsp?containerId=prUS41061616}}
  	However, it would be premature to conclude that the importance of 
@@ -39,7 +39,7 @@
  	only provide limited insight.
  	
  	Alternatively, growth could be measured by usage. It is impractical (if not
- 	impossible) to keep track of everybody's smartphone usage. Instead, by using
+ 	impossible) to record everybody's smartphone usage. Instead, by using
  	Wikipedia as a globally representative website (at least for countries 
  	where it
  	is not banned), this can be approximated. Since the end of 2007, the 
@@ -55,7 +55,7 @@
  	Griliches (1957). Additionally, I allow for temporary increases of mobile usage due to the introduction of a new device. The magnitude 
  	of this boost in the share of mobile traffic across several generations of mobile devices quantifies the process of technological diffusion.
  	
- 	I find that the S-curve model describes the development of relative mobile internet usage on Wikimedia pages well. There is evidence in favour of a positive effect of new smartphones introduced to the market even though that effect is diminishing over the generations.
+ 	I find that the S-curve model describes the development of relative mobile internet usage on Wikimedia pages well. There is evidence in favour of a positive effect of new smartphones introduced to the market even though that effect is diminishing with each generation.
  	
  	
  	\section{Literature Review}
@@ -83,21 +83,21 @@
  	offers the mathematical convenience of being able to identify a unique 
  	``rate of acceptance".
  	
- 	This concept of technology diffusion has since been applied to areas such as
+ 	This concept of technology diffusion has since been applied to many areas, including
  	computers (Caselli and Coleman (2001)\cite{CaselliColeman2001}) and hard
  	drives (Christensen (1992)\cite{Christensen1992}). While the latter of these
  	two papers is specifically written in the context of firms where new
  	technology results in a higher number of bits written on a given area of a
  	hard drive, it can be easily translated into the context of consumer
- 	electronics: instead of a measure of hard drive performance, the dependent
+ 	electronics, where instead of a measure of hard drive performance, the dependent
  	variable in this paper will be mobile internet traffic. Just as the
  	technological concept of a hard drive had already existed for a long time 
- 	but the ``output" (being bit density) kept improving, so has the concept of 
+ 	but the ``output" (bit density) kept improving, so has the concept of 
  	mobile internet access existed for some years but the adoption of this 
  	technology is still in progress.
  	
- 	More related work has been done by Majumdar and Venkataraman
- 	(1998)\cite{MajumdarVenkataraman1998}. They analyse technological adoption 
+ 	More related work has been done by Czernich et al. (2011)\cite{Czernich2011} who analyse broadband penetration rates over time based on the S-curve model. Majumdar and Venkataraman
+ 	(1998)\cite{MajumdarVenkataraman1998} analyse technological adoption 
  	and
  	diffusion in the context of the telecommunications industry. In this case,
  	technology diffusion is not just a function of time and knowledge (and other
@@ -158,7 +158,7 @@
   	aggregation. Therefore, the different non-mobile types are added up to one
   	category in order to retain comparability with ``mobile". The resulting
   	panel contains the hourly number of visits and the amount of data of all
-  	mobile and all non-mobile parts of the Wikimedia Project by language. There
+  	mobile and non-mobile parts of the Wikimedia Project by language. There
   	are (roughly) 70,000 hours and about 200 languages for a total of 14 million
   	observations per variable. However, since hourly data is extremely sensitive and
   	technological adoption is probably measured in weeks if not months or years
@@ -209,7 +209,7 @@
   	saturated. This is captured by the convergence to 1 in the logistic 
   	function as the underlying variable (in this case time) increases.
   	
-  	Realistically, mobile traffic will probably never represent all traffic. In
+  	Realistically, mobile traffic will likely never represent all traffic. In
   	other words, the ratio of interest will never equal 1 and probably also 
   	never
   	approach it. Instead, it makes more sense to assume convergence to some 
@@ -272,7 +272,7 @@
   	for which there were no data for more than 40\% of the recorded time 
   	range, 200 unique languages remain. Some of these languages are used very 
   	little and as a consequence, even after aggregating to weekly ratios, the 
-  	data is very noisy. For many of these the maximization in the estimations 
+  	data is very noisy. For many of these, the minimization in the estimation 
   	procedure of the model presented above did not converge. This was the case 
   	for 49 languages. 
   	
@@ -286,7 +286,7 @@
   	\subsection{General Fit of the S-Curve}
   	
   	Figure \ref{engraph} shows the observed ratio and fitted S-curve for the 
-  	English language (the language with the most articles). The expected upward trend is obvious. The rate of 
+  	English language (the language with the most articles) and the expected upward trend is obvious. The rate of 
   	acceptance/adoption visibly starts decreasing in the second half of 2014. 
   	This slowdown is in line with the fact stated in the introduction that 
   	growth in smartphone sales is expected to slow down and fall below 
@@ -338,7 +338,7 @@
   	
   	
   	\subsection{The Effect of Different Generations of Mobile Devices}
-	The main goal of this paper is to identify the effect that mobile devices have on mobile internet usage. Specifically, introduction dates of new Apple iPhones and new Samsung Galaxy S phones (as a proxy for the Android segment of the mobile market) are used for the creation of dummy variables. For example in Table \ref{bothtable}, the coefficient on iPhone 3GS captures the estimated effect of being in a week after the release date of the iPhone 3GS and before the release date of its successor, the iPhone 4. In terms of actual dates, the dummy on iPhone 3GS is equal to one if a week falls between June 19, 2009\footnote{\url{http://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html}} and June 24, 2010 and equal to zero otherwise. Therefore, there is no overlap within the iPhone dummies or within the Galaxy S dummies but there is overlap between the dummies for Apple and Samsung phones since they belong to different product families. Note that the first two generations of the iPhone are not included in this analysis because they were introduced before Wikimedia started recording mobile traffic separately from regular page visits.
+	The main goal of this paper is to identify the effect that mobile devices have on mobile internet usage. Specifically, introduction dates of new Apple iPhones and new Samsung Galaxy S phones (as a proxy for the Android segment of the mobile market) are used for the creation of dummy variables. For example in Table \ref{bothtable}, the coefficient on iPhone 3GS captures the estimated effect of being in a week after the release date of the iPhone 3GS and before the release date of its successor, the iPhone 4. In terms of actual dates, the dummy on iPhone 3GS is equal to one if a week falls between June 19, 2009\footnote{\href{http://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html}{http://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS[...].html}} and June 24, 2010 and equal to zero otherwise. Therefore, there is no overlap within the iPhone dummies or within the Galaxy S dummies but there is overlap between the dummies for Apple and Samsung phones since they belong to different product families. Note that the first two generations of the iPhone are not included in this analysis because they were introduced before Wikimedia started recording mobile traffic separately from regular page visits.
    
    \begin{table}[!htbp] \centering 
    \caption{Select Results for estimated S-curve parameters and technology effects} 
@@ -422,11 +422,11 @@
    \end{footnotesize}
    \end{table}
    
-   After including the dummies for the product cycles of these two manufacturers, the estimates of the basic parameters of the S-curve change quite drastically. The biggest change can be observed in the estimate of the parameter $K$, the ratio of mobile to total visits that internet traffic converges to. Especially the predicted ratios for Swedish and Italian are much larger than in Table \ref{gentable}.  However, the last in-sample observation is that of the last week of 2015. During that week, the iPhone 6S and the Galaxy S6 were the most recent generations in their respective product families and the dummies for these devices would have been equal to one, meaning the effect of the device has to be added to the S-curve. Using the effect of these two devices as a best guess for the effect of future devices and adding them to $K$, the sum is much closer to the estimates of $K$ in Table \ref{gentable}.
+   After including the dummies for the product cycles of these two manufacturers, the estimates of the basic parameters of the S-curve change quite drastically. The biggest change can be observed in the estimate of the parameter $K$, the ratio of mobile to total visits that internet traffic converges to. The predicted ratios for Swedish and Italian, in particular, are much larger than those in Table \ref{gentable}.  However, the last in-sample observation is that of the last week of 2015. During that week, the iPhone 6S and the Galaxy S6 were the most recent generations in their respective product families and the dummies for these devices would have been equal to one, meaning the effect of the device has to be added to the S-curve. Using the effect of these two devices as a best guess for the effect of future devices and adding them to $K$, the sum is much closer to the estimates of $K$ in Table \ref{gentable}.
    
    This suggest that some caution has to be exercised when interpreting the results in Table \ref{bothtable}. $K$ does not correctly capture the asymptotic ratio anymore. Since the absence of any device effect (all dummies being equal to zero) represents the average effect of all generations of a device on mobile internet usage\footnote{As with any dummy variable model, either one dummy is left out and therefore captured by the intercept, or a full set of dummies is included and the intercept is dropped. In this case, the case where all dummies are equal to zero represents the average across all dummies. The model in this paper does not have an ``intercept" and therefore the case in which all dummies are equal to zero (a week that does not lie within two release dates) captures the average and the effects of the dummies are consequently centred around zero.}, $K$ now represents the asymptotic ratio that would have been reached had this average effect persisted over time. Normally we assume diminishing returns in the effect of new technology over time. This can be verified here as well: The effect of the first few generations of iPhones and Android phones generally deviates slightly positively from the average effect and then drops off to negative deviations that are significantly different from the average effect in the last two or three generations across all languages. Therefore, the asymptotic ratio as time progresses is now represented by $K$ plus at most the sum of the effects of the latest iOS and Android devices, which, as argued, is reasonably close to the estimates in Table \ref{gentable}.
    
-   The question that remains is whether the average effect of mobile devices on mobile internet usage is positive or negative. First, it should be noted that the time frame is still the same as in the model without dummy variables. Second, across all languages the estimate of $\alpha$ is smaller in the second model, meaning that the centre (the point of symmetry) of the logistic function is shifted to the right. This means that without the introduction of mobile devices the ``natural" adoption of technology into mobile internet usage started later than previously estimated. Third, even higher levels of $K$ are estimated, requiring, fourth, higher rates of technological adoption as can be seen in the larger estimates of $\beta$. Combining these four facts results in a strong argument in favour of a positive average effect. Were the opposite true for any of these four arguments, the case would be much less compelling. Instead, if the average effect is positive, a higher $\beta$ makes sense since it captures the effect of time and the average effect of the various generations of a device. Likewise, a lager $K$ is the ratio should the average (positive) effect of mobile devices persist. Lastly, if the effect of mobile devices is positive and diminishing, it is the largest in early generations. That means that a fair share of early mobile traffic is explained by these devices. Consequently, the remaining ratio to be explained by the S-curve is much smaller early on in the time series, resulting in a shift to the right of the curve which is captured by the decrease in $\alpha$.
+   The question that remains is whether the average effect of mobile devices on mobile internet usage is positive or negative. First, it should be noted that the time frame is still the same as in the model without dummy variables. Second, across all languages the estimate of $\alpha$ is smaller in the second model, meaning that the centre (the point of symmetry) of the logistic function is shifted to the right. This means that without the introduction of mobile devices the ``natural" adoption of technology into mobile internet usage started later than previously estimated. Third, even higher levels of $K$ are estimated. Given the same time frame as before, this requires the fourth piece of evidence: higher rates of technological adoption, which can be seen in the larger estimates of $\beta$. Combining these four facts results in a strong argument in favour of a positive average effect. Were the opposite true for any of these four arguments, the case would be much less compelling. Instead, if the average effect is positive, a higher $\beta$ is expected since it captures the effect of time and the average effect of the various generations of a device. Likewise, a larger $K$ corresponds to the asymptotic ratio should the average (positive) effect of mobile devices persist. Lastly, if the effect of mobile devices is positive and diminishing, it is the largest in early generations. That means that a fair share of early mobile traffic is explained by these devices. Consequently, the remaining ratio to be explained by the S-curve is much smaller early on in the time series, resulting in a shift to the right of the curve which is captured by the decrease in $\alpha$.
    
    In conclusion, there is ample evidence that the average effect of the introduction of mobile devices (both iPhones and Android phones) on mobile internet usage is positive but decreasing over generations.
    
@@ -438,12 +438,12 @@
    \section{Conclusion}
    When describing the ratio of mobile Wikimedia page visits relative to the total number of visits as a proxy for overall mobile internet usage, the S-curve model for technology diffusion first used by Griliches (1957)\cite{Griliches1957} performs remarkably well. I find that, for the most popular languages on Wikipedia, this ratio is predicted to converge to somewhere in the 50\% to 60\% range depending on the language. Furthermore, I find rates of adoption that are similar between languages and typically lie between 0.015 and 0.02.
    
-   In addition to this model purely described by the progression of time, I find evidence that strongly suggests that the introduction of iPhones and Samsung Galaxy S phones (as representative for the Android segment of the mobile market) have a generally positive effect on the relative usage of mobile internet. More specifically, I find that this effect is diminishing over time. Especially with the last two generations of phones, the effect on the ratio is significantly less than the average effect across generations. It is not clear if the effect of the last two generations is positive or negative. It is, in fact, possible that the negative deviation from the average effect is greater in magnitude than that average so that the overall effect of the latest generations might actually be negative. While this may seem counter-intuitive at first, it may be explained by increased usage of specialized apps. The Wikimedia page traffic data dumps underlying this paper only track browser traffic and do not include traffic resulting from the official and/or unofficial Wikipedia apps. However, this does not have to be a flaw or caveat in the analysis since it would probably not be unreasonable to believe that a shift to apps away from mobile browsers is also representative for general mobile usage and not unique to Wikipedia.
+   In addition to this model purely described by the progression of time, I find evidence that strongly suggests that the introduction of iPhones and Samsung Galaxy S phones (as representative for the Android segment of the mobile market) have a generally positive effect on the relative usage of mobile internet. More specifically, I find that this effect is diminishing over time, especially with the last two generations of phones. The effect on the ratio from the last two generations is significantly less than the average effect across generations and it is not clear if the absolute effect is positive or negative. It is, in fact, possible that the negative deviation from the average effect is greater in magnitude than that average so that the overall effect of the latest generations might actually be negative. While this may seem counter-intuitive at first, it may be explained by increased usage of specialized apps. The Wikimedia page traffic data dumps underlying this paper only track browser traffic and do not include traffic resulting from the official and/or unofficial Wikipedia apps. However, this does not have to be a flaw or caveat in the analysis since it would probably not be unreasonable to believe that a shift to apps away from mobile browsers is also representative for general mobile usage and not unique to Wikipedia.
    
-   Finally, it would be desirable to have some better robustness checks. Two approaches come to mind that may achieve this. First, as mentioned above, using only one of the manufacturers should work but fails due to very regular release schedules. The closest substitute to this approach is using different manufacturers and device families. However, given the large market share that Apple has, ignore iPhones does not seem prudent. Alternatively, one may use a different manufacturer as a proxy for all Android devices. The problem with this approach is that there is no single family of devices that could serve as a reliable proxy. For example, the Sony Xperia series, though in existence for many years, had very inconsistent sales figures over its generations\footnote{``Due to certain changes in Sony’s organizational structure, sales and operating revenue and operating income (loss) of
+   Finally, it would be desirable to have some better robustness checks. Two approaches come to mind that may achieve this. First, as mentioned above, using only one of the manufacturers should work but fails due to very regular release schedules. The closest substitute to this approach is using different manufacturers and device families. However, given the large market share that Apple has, ignoring iPhones does not seem prudent. Alternatively, one may use a different manufacturer as a proxy for all Android devices. The problem with this approach is that there is no single family of devices that could serve as a reliable proxy. For example, the Sony Xperia series, though in existence for many years, had very inconsistent sales figures over its generations\footnote{``Due to certain changes in Sony’s organizational structure, sales and operating revenue and operating income (loss) of
    the MC segment of the comparable prior period have been reclassified to conform to the current presentation." as an example from the \href{http://www.sony.net/SonyInfo/IR/library/fr/15q3_sony.pdf}{Sony Corporation Consolidated Financial Results for the Third Quarter Ended December 31, 2015}} and the Nexus family only moved away from the image of a developer phone to a phone for the general public with the Nexus 4 at the end of 2012.
    
-   A second approach for a robustness check could be to use the amount of data transmitted to mobile and non-mobile devices to calculate a ratio similar to the ratio of visits used in this paper. This method has the advantage that the data is also published in the page traffic dumps. However, there is about a 90\% permanent drop in the calculated data ratios for all languages in August 2011. Considering that the ratio of visits, that is calculated in the same way from the same data source, does not experience this jump, it is likely that something changed in the way data transmission was measured by the Wikimedia foundation. While it would be relatively easy to correct this structural break in the data, I did not feel comfortable doing so without knowing the reason for the sudden drop in the ratio. Unfortunately, I was not able to find out what caused this and therefore decided against using the data even though I fully recorded it and it is available together with the other data.
+   A second approach for a robustness check could be to use the amount of data transmitted to mobile and non-mobile devices to calculate a ratio similar to the ratio of visits used in this paper. This method has the advantage that the data is also published in the page traffic dumps. However, there is about a 90\% permanent drop in the calculated data ratios for all languages in August 2011. Considering that the ratio of visits, calculated in the same way from the same data source, does not experience this jump, it is likely that something changed in the way data transmission was measured by the Wikimedia foundation. While it would be relatively easy to correct this structural break in the data, I did not feel comfortable doing so without knowing the reason for the sudden drop in the ratio. Unfortunately, I was not able to find out what caused this and therefore decided against using the data even though I fully recorded it and it is available together with the other data.
    
    \newpage
    
@@ -462,6 +462,11 @@
    	Christensen, Clayton M., 1992, ``Exploring the Limits of the Technology
    	S-Curve. Part I: Component Technologies", \textit{Product and
    		Operations Management} 1-4, pp. 334--357.
+   	
+   	\bibitem{Czernich2011}
+   	Czernich, N., Falck, O., Kretschmer, T., and Woessmann, L., 2011,
+   	``Broadband Infrastructure and Economic Growth",
+   	\textit{Economic Journal} 121, pp. 505--532.
    	
    	\bibitem{MajumdarVenkataraman1998}
    	Majumdar, Sumit, and Venkataraman S., 1992, ``Network Effects and the
